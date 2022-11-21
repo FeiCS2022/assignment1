@@ -52,3 +52,51 @@ const cat = {
 }
 
 console.log(cat.scream())
+
+
+//Make an object of your computer (year, model, color, etc.)
+const myComputer = {
+  "year" : 2020,
+  "model" : "Acer",
+  "color" : "Black",
+  
+};
+
+
+//access the data about your computer's year
+console.log(myComputer.year);
+
+
+//You've painted your laptop!
+myComputer.color = "white";
+
+
+//add a new property called "broken" and set it equal to "true" using dot notation
+myComputer.broken = true;
+
+
+//add a new property using dot notation called "programs" that is a list of a few programs on your computer
+myComputer.programs = ["hi", "I don't know", "hey"];
+console.log(myComputer.programs);
+
+
+//write an if statment to check if your laptop is broken - if it is broken log "fixing laptop" and change "broken" to "false"
+if (myComputer.broken) {
+  console.log("fixing laptop");
+myComputer.broken = false;
+}
+
+
+//write an if statement to check your object for an "owner" property. If there is no owner, use dot notation to add one.
+if (myComputer.hasOwnProperty("owner") == false) {
+  myComputer.owner = "Fei"
+}
+
+
+//You've just installed "Sims 5" on your computer. We want to check if your "programs" list already has "Sims 5" (use a loop). If there is no "Sims 5" add it, else log "Sims 5 already in the list"
+if (myComputer.programs["Sims 5"]) {
+  console.log("Sims 5 already in the list")
+} else {
+  myComputer.programs.push("Sims 5")
+}
+console.log(myComputer.owner);
