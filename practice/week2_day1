@@ -94,7 +94,7 @@ if (myComputer.hasOwnProperty("owner") == false) {
 
 
 //You've just installed "Sims 5" on your computer. We want to check if your "programs" list already has "Sims 5" (use a loop). If there is no "Sims 5" add it, else log "Sims 5 already in the list"
-if (myComputer.programs["Sims 5"]) {
+if (myComputer.programs.includes("Sims 5")) {
   console.log("Sims 5 already in the list")
 } else {
   myComputer.programs.push("Sims 5")
