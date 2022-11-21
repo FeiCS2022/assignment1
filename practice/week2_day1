@@ -1,0 +1,54 @@
+//convert array
+const conArr=(arr) => {
+  const upArr= arr.map(x => x.toUpperCase());
+  const sortArr = upArr.sort();
+  return sortArr;
+}
+console.log(conArr(["z", "hi", "hey", "apple"]))
+
+
+
+const conArr1=(arr) => {
+  let res = '';
+let newArr =[];
+ for (i = 0; i < arr.length; i++) {
+  res = arr[i].toUpperCase();
+  newArr.push(res);
+}
+return newArr.sort()
+}
+console.log(conArr1(["z", "hi", "hey", "apple"]))
+
+//FizzBuzz
+const fizzBuzz=() =>{
+for (i = 1; i <= 100; i++) {
+  if (i%3==0) {
+    console.log("Fizz")
+  } else if (i%5==0) {
+    console.log("Buzz")
+  } else if(i%5 ==0 && i%3 ==0) {
+    console.log("Fizzbuzz")
+  }
+}
+}
+fizzBuzz()
+
+
+//Object
+const cat = {
+  name:"Tom",
+  age : 8,
+  favoriteThings: ["tuna", "other cats", "ball of yarn"],
+  speakFrenche: false,
+  canSolveRubiks: false,
+  enemies: {
+    name: "Jerry",
+    size: "small",
+    age: 3
+  },
+  scream: () =>{
+    console.log("Jerry I will kill you!")
+  }
+}
+
+console.log(cat.scream())
