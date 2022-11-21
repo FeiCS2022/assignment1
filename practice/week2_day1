@@ -98,5 +98,19 @@ if (myComputer.programs.includes("Sims 5")) {
   console.log("Sims 5 already in the list")
 } else {
   myComputer.programs.push("Sims 5")
+  
 }
 console.log(myComputer.owner);
+
+
+//another method to add "sims 5"
+for (i = 0; i < myComputer.programs.length; i++) {
+  if (myComputer.programs[i] == "Sims 5"){
+    console.log("great");
+    break;
+    
+  }  else {
+     myComputer.programs.push("Sims 5")
+    break;
+}
+}
