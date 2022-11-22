@@ -15,6 +15,8 @@ function feast(beast, dish) {
   //your function here
   }
   feast ("cat", "dog")
+  //one line code: 
+  const feast = (beast, dish) => beast[0] == dish[0] && beast[beast.length -1] == dish[dish.length -1]
 
 
   function getAverage(marks){
@@ -27,3 +29,6 @@ function feast(beast, dish) {
     ave = (total / num);
     return Math.round(ave);
   }
+  // one line code:
+  const getAverage = (marks) =>{ return Math.floor(marks.reduce((a, b) => a + b) / marks.length)}
+
