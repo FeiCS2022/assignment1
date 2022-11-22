@@ -32,3 +32,16 @@ function feast(beast, dish) {
   // one line code:
   const getAverage = (marks) =>{ return Math.floor(marks.reduce((a, b) => a + b) / marks.length)}
 
+//make changes of properties in an Object
+const movies = [
+    {title:"Tokyo Story", year: 1991},
+    {title: "Paul", year : 2008},
+    {title: "L'Adventure", year : 1980}
+  ];
+  console.log(movies);
+  movies.forEach(ele => {
+    if (ele.title == "Paul") {
+      ele.year = 2018
+    }
+  });
+  console.log(movies)
