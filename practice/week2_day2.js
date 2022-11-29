@@ -32,6 +32,7 @@ function feast(beast, dish) {
   // one line code:
   const getAverage = (marks) =>{ return Math.floor(marks.reduce((a, b) => a + b) / marks.length)}
 
+
 //make changes of properties in an Object
 const movies = [
     {title:"Tokyo Story", year: 1991},
@@ -45,3 +46,37 @@ const movies = [
     }
   });
   console.log(movies)
+
+
+  //
+  let party = [
+    {
+        name: 'Joline',
+        hitpoints: 15,
+        belongings: ["spear", "bread", "Tums"],
+        companion: {
+            name: "Tabby",
+            type: "cat",
+        }
+    },
+    {
+        name: 'Timothy',
+        hitpoints: 10,
+        belongings: ["sword", "potion", "Tums"],
+        companion: {
+            name: "Velma",
+            type: "Bat",
+        }
+    },
+    {
+        name: 'Sarah',
+        hitpoints: 20,
+        belongings: ["bow", "arrows", "wood"],
+        companion: {
+            name: "Tony",
+            type: "tiger",
+        }
+    },
+]
+
+
