@@ -63,7 +63,6 @@ const changeType = (name, newType) => {
 
 
 // Prompt 4: Timothy drank this potion. Raise his hitpoints by 20 and remove "potion" from his belongings.
-
 party.forEach(ele => {if(ele.name== "Timothy") {
     delete ele.belongings[1];
     //another way to indicate "potion"??
