@@ -1,4 +1,3 @@
-
 let party = [
     {
         name: 'Joline',
@@ -28,6 +27,8 @@ let party = [
         }
     },
 ]
+
+
 // Prompt 1: double the hitpoints of everyone in the party
 const doublePoint = (arr) => {
     for (ele in arr){
@@ -59,6 +60,7 @@ const changeType = (name, newType) => {
       }
     }
   };
+
   changeType("Sarah", "jellyfish")
 
 
@@ -84,6 +86,7 @@ party.forEach(ele => {if(ele.name == "Joline") {
    )
   }
   })
+
    console.log(party[1])
 
 
@@ -95,6 +98,7 @@ const removePerson = (arr, name) => {
       }
     }
    }
+
    removePerson(party, "Joline")
    console.log(party)
 
@@ -114,6 +118,7 @@ const addGold = (goldNum) => {
       party[i].gold = goldNum / party.length 
     }
   };
+
   addGold(200);
   console.log(party)
 
@@ -138,10 +143,8 @@ const changeBelongings = (person, oldB, newB) => {
     if (party[i].name == person) {
     var j = party[i].belongings.indexOf(oldB);
       party[i].belongings[j] = newB;
-    
     }
   }
-  
 }
 
 changeBelongings("Timothy", "sword", "Rusty Sword")
@@ -159,5 +162,6 @@ const setLeader = (name) => {
       }
     }
   }
+
   setLeader("Joline")
   console.log(party)
