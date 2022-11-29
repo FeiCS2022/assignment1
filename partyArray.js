@@ -134,9 +134,6 @@ const changeCompanion = (person, type) => {
 
 
 // Prompt 10: Timothy’s sword has gotten old. Change it to “Rusty Sword" 
-
-console.log(party[0].companion.type)
-// Prompt 10: Timothy’s sword has gotten old. Change it to “Rusty Sword" 
 const changeBelongings = (person, oldB, newB) => {
   for (let i = 0; i < party.length; i++) {
     if (party[i].name == person) {
