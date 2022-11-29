@@ -35,6 +35,7 @@ const doublePoint = (arr) => {
       arr[ele].hitpoints = arr[ele].hitpoints*2;
     }
   };
+
   console.log(par[0].hitpoints)
    doublePoint(par);
   console.log(par[0].hitpoints);
@@ -48,6 +49,7 @@ const takeHit = (name, point) => {
 }
 }
 }
+
 takeHit("Timothy", 5)
 console.log(par[1].hitpoints)
 
@@ -72,6 +74,7 @@ party.forEach(ele => {if(ele.name== "Timothy") {
  }
  }
  )
+ 
  console.log(party[1])
 
 
